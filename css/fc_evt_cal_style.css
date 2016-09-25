@@ -1,0 +1,134 @@
+/*
+ * Module mod_fceventscalendar For Joomla 
+ * Version		: 1.0.0
+ * Created by	: Jesus Vargas
+ * License : GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ */
+
+div.eventscalendar {
+	max-width: 250px;
+	overflow: visible;
+}
+table.nc-header, table.nc-body {
+	border: none;
+	width: 100%;
+}
+table.nc-header tr, table.nc-body tr, table.nc-header td, table.nc-body td  { border: none; }	
+table.nc-header {
+	margin: 5px 0;
+}
+table.nc-header a {
+	height: 16px;
+	display: block;
+	width: 16px;
+}
+table.nc-header a.back-mth { background-position: 0 -32px; }
+table.nc-header a.fwd-mth { background-position: 0 -16px; }
+table.nc-header a.fwd-yr { background-position: 0 0; }
+table.nc-header .monthname, table.nc-header .yearname, table.nc-body .dayname {
+	font-weight: bold;
+}
+.eventscalendar span.weekday1 {}
+.eventscalendar span.weekday2 {}
+.eventscalendar span.weekday3 {}
+.eventscalendar span.weekday4 {}
+.eventscalendar span.weekday5 {}
+.eventscalendar span.weekday6 {
+	color: #FF3D3D;
+}
+.eventscalendar span.weekday7 {
+	color: #FF3D3D;
+}
+.eventscalendar span.outofmonth {
+	color: #CCCCCC;
+}
+.eventscalendar span.today {
+	font-weight: bold;
+}
+.eventscalendar span.today ul li {
+	font-weight: normal;
+}
+.eventscalendar span.nc-day { 
+	position: relative;
+	display: block;
+	padding: 3px 1px 1px 2px;
+	text-align: center;
+}
+.eventscalendar ul.nc-items {
+/*	background: url(../assets/opacity.png) repeat; */
+	background: #ccc;
+	position: absolute;
+	left: auto!important;
+	right: auto!important;
+	top: auto!important;
+	bottom: 15px!important;
+	font-size: 0.8em;
+	line-height: 1.1em;
+	margin: 0!important;
+	padding: 5px 10px;
+	width: 180px;
+	list-style: none;
+	border: 1px solid #000;
+	text-align: left;
+	z-index: 100;
+	box-shadow: 0 0 8px #333;
+	border-radius: 5px;
+	display: none;
+}
+.eventscalendar .week1 ul.nc-items, .eventscalendar .week2 ul.nc-items {
+	top: 15px!important;
+	bottom: auto!important;
+}
+.eventscalendar span.relday1 ul.nc-items { left: 0!important; }
+.eventscalendar span.relday2 ul.nc-items { left: -100%!important; }
+.eventscalendar span.relday3 ul.nc-items { left: -200%!important; }
+.eventscalendar span.relday4 ul.nc-items { left: -250%!important; }
+.eventscalendar span.relday5 ul.nc-items { right: -200%!important; }
+.eventscalendar span.relday6 ul.nc-items { right: -100%!important; }
+.eventscalendar span.relday7 ul.nc-items { right: 0!important; }
+
+span.nc-day ul.nc-items li  { 
+	margin-left: 5px;
+	padding: 3px 5px;
+	color:#ff0000;    
+	list-style:square;}
+
+span.nc-day ul.nc-items li a{ 
+	background: none;
+	display: block;
+	color: #FFF;
+}
+
+span.nc-day ul.nc-items li a:hover  { 
+	color: yellow !important;
+}
+span.nc-day:hover ul.nc-items { 
+	display: block;
+}
+.eventscalendar span.hasitemsdotted {
+	cursor: pointer;
+	background: url(../assets/dot.png) no-repeat 50% 100%;
+}
+
+.eventscalendar span.hasitemsbottomline {	
+	cursor: pointer;
+	margin: 0px 2px;
+	border-bottom:3px solid transparent;}
+	
+.eventscalendar span.hasnoitemsbottomline {	
+	margin: 0px 2px;
+	border-bottom: 3px solid transparent;}
+
+span.norangeitem {
+margin: 1px 0px 0px 0px;
+	display:block;
+	border-bottom:3px solid transparent;}
+	
+span.hasrangeitem{
+margin: 1px 0px 0px 0px;
+	display:block;
+	border-bottom:3px solid #000;}
+
+.bgimgcall {
+	display: none;
+}
