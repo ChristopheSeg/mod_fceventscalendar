@@ -1,14 +1,15 @@
 <?php
 /*------------------------------------------------------------------------
-# mod_fceventscalendar - News Calendar
+# mod_fceventscalendar - Event Calendar
 # ------------------------------------------------------------------------
-# author	Jesús Vargas Garita
-# Copyright (C) 2010 www.joomlahill.com. All Rights Reserved.
+# author    Christophe Seguinot
 # @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-# Websites: http://www.joomlahill.com
-# Technical Support:  Forum - http://www.joomlahill.com/forum
--------------------------------------------------------------------------*/
-
+# website https://github.com/ChristopheSeg/mod_fceventscalendar
+# mod_fceventscalendar is a fork of mod_fcnewscalendar
+# written by Jesús Vargas Garita from www.joomlahill.com
+#
+-------------------------------------------------------------------------
+*/
 // no direct access
 defined('_JEXEC') or die;
 

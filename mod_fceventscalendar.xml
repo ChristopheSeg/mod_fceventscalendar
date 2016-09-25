@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension
 	type="module"
-	version="1.7.0"
+	version="0.9"
 	client="site"
 	method="upgrade">
 	<name>MOD_FC_EVT_CAL</name>
-	<author>ColorPack Co.,Ltd.</author>
-	<creationDate>Jan 2015</creationDate>
-	<copyright>Copyright (C) 2014 ColorPack Co.,Ltd. All rights reserved.</copyright>
-	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<authorEmail>chuzky@gmail.com</authorEmail>
-	<authorUrl>http://www.colorpackstore.com</authorUrl>
+	<author>Christophe Seguinot</author>
+	<creationDate>Sep 2016</creationDate>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>christophe.seguinot@univ-lille1.fr</authorEmail>
+	<authorUrl>https://github.com/ChristopheSeg/mod_fceventscalendar</authorUrl>
 	<version>0.9</version>
 	<description>MOD_FC_EVT_CAL_XML_DESC</description>
 	<files>
