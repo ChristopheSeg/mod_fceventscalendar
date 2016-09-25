@@ -12,7 +12,7 @@
 * user access level: not manage by the component (some event
 
 
-## Version 0.9
+## Version 0.9 (september 25 2016)
 This version is functional but require more testing to be used on a production site. 
 
 ## Module history
