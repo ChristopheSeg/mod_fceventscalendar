@@ -7,6 +7,7 @@
 * event date can be any Joomla core field or Flexicontent fields (representing a date)
 * optional *end date* for event defined in a date range
 * the calendar can display single date and date range events
+* ajax calendar using com_ajax
 * translation: English and French
 * Style can be customized in backend module parameters
 * user access level: not manage by the component (some event
