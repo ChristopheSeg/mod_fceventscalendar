@@ -9,7 +9,11 @@
 * the calendar can display single date and date range events
 * translation: English and French
 * Style can be customized in backend module parameters
+* user access level: not manage by the component (some event
 
+
+## Version 0.9
+This version is functional but require more testing to be used on a production site. 
 
 ## Module history
 mod_fceventscalendar is a fork of mod_fcnewscalendar which was no longer maintained. 
