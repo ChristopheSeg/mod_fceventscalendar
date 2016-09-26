@@ -324,6 +324,7 @@ return;
 		$startdateiscorefield = $field->iscore;
 		$startdatefieldname = $field->name;
 
+
 		$enddate = $params->get('enddate', '');
 		$query ="SELECT name,iscore FROM #__flexicontent_fields WHERE id=$enddate";
 		$db->setQuery($query);
@@ -387,10 +388,10 @@ return;
 				$select .=" ,i.$startdatefieldname as day";
 				if ($usedaterange) {
 					$w1 = " (i.$startdatefieldname<='$startDateRange')";
-					$w4 = " (irel.valuei.$startdatefieldname<='$endDateRange')";
+					$w4 = " (i.$startdatefieldname<='$endDateRange')";
 					$w5 = " (i.$startdatefieldname>='$startDateRange')";
 				}
-				$w8 = " AND ('$startDateRange'<=i.$startdate) AND (i.$startdate<='$endDateRange')";
+				$w8 = " AND ('$startDateRange'<=i.$startdatefieldname) AND (i.$startdatefieldname<='$endDateRange')";
 			}
 			else
 			{
@@ -416,7 +417,11 @@ return;
 				$w2 = " (i.$enddatefieldname>='$startDateRange')";
 				$w3 = " (i.$enddatefieldname>='$endDateRange')";
 				$w6 = " (i.$enddatefieldname<='$endDateRange')";
-				$w7 = " (i.$enddatefieldname='0000-00-00 00:00:00' AND i.$startdatefieldname>='$endDateRange' AND i.$startdatefieldname<='$endDateRange')";
+				if ($startdateiscorefield) {
+					$w7 = " (i.$enddatefieldname='0000-00-00 00:00:00' AND i.$startdatefieldname>='$endDateRange' AND i.$startdatefieldname<='$endDateRange')";
+				} else {
+					$w7 = " (i.$enddatefieldname='0000-00-00 00:00:00' AND irel.value >='$startDateRange' AND irel.value<='$endDateRange')";
+				}
 			}
 			else
 			{
@@ -426,7 +431,11 @@ return;
 				$w2 = " (irel2.value>='$startDateRange')";
 				$w3 = " (irel2.value>='$endDateRange')";
 				$w6 = " (irel2.value<='$endDateRange')";
-				$w7 = " (irel2.value='0000-00-00 00:00:00' AND irel.value >='$startDateRange' AND irel.value<='$endDateRange')";
+				if ($startdateiscorefield) {
+					$w7 = " (irel2.value='0000-00-00 00:00:00' AND i.$startdatefieldname>='$endDateRange' AND i.$startdatefieldname<='$endDateRange')";
+				} else {
+					$w7 = " (irel2.value='0000-00-00 00:00:00' AND irel.value >='$startDateRange' AND irel.value<='$endDateRange')";
+				}
 			}
 		}
 
