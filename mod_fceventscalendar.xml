@@ -41,18 +41,23 @@
 				/>
 				<field 
 					name="startdate" 
-					type="fields" 
+					type="sql" 
 					default=""
 					label="MOD_FC_EVT_CAL_FIELD_START_DATE" 
 					description="MOD_FC_EVT_CAL_FIELD_START_DATE_DESC"
-				/>
+					query="SELECT id AS value, concat( name, ' (', id, ')') AS title FROM #__flexicontent_fields WHERE field_type IN ('created','modified','date')" 
+					value_field="title" 
+					showon=""/>
+
 				<field 
 					name="enddate" 
-					type="fields" 
+					type="sql" 
 					default=""
 					label="MOD_FC_EVT_CAL_FIELD_END_DATE" 
 					description="MOD_FC_EVT_CAL_FIELD_END_DATE_DESC"
-				/>
+					query="SELECT id AS value, concat( name, ' (', id, ')') AS title FROM #__flexicontent_fields WHERE field_type IN ('created','modified','date')" 
+					value_field="title" 
+					showon=""/>
 				<field
 					name="user_selection"
 					type="list"
